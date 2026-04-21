@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-12)
+## Unreleased (2026-04-21)
+
+<section class="features">
+
+### Features
+
+-   [`61b1d19`](https://github.com/stdlib-js/stdlib/commit/61b1d19140c82a0925fd5de8b975aefa35783dc6) - add C implementation for `stats/base/ndarray/dmeanpn` [(#10493)](https://github.com/stdlib-js/stdlib/pull/10493)
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`61b1d19`](https://github.com/stdlib-js/stdlib/commit/61b1d19140c82a0925fd5de8b975aefa35783dc6) - **feat:** add C implementation for `stats/base/ndarray/dmeanpn` [(#10493)](https://github.com/stdlib-js/stdlib/pull/10493) _(by Bhargav Dabhade, Athan Reines)_
 -   [`9a51841`](https://github.com/stdlib-js/stdlib/commit/9a51841213eb13adbd6b8fe36d96c00aac9fbb17) - **bench:** refactor to use string interpolation in `stats/base` [(#11393)](https://github.com/stdlib-js/stdlib/pull/11393) _(by Karan Anand)_
 
 </details>
@@ -24,8 +35,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
+-   Bhargav Dabhade
 -   Karan Anand
 
 </section>
