@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,42 +16,35 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { float64ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Compute the arithmetic mean of a one-dimensional double-precision floating-point ndarray using a two-pass error correction algorithm.
+* Computes the arithmetic mean of a one-dimensional double-precision floating-point ndarray using a two-pass error correction algorithm.
 *
-* @module @stdlib/stats-base-ndarray-dmeanpn
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
+* @returns arithmetic mean
 *
 * @example
 * var Float64Vector = require( '@stdlib/ndarray-vector-float64' );
-* var dmeanpn = require( '@stdlib/stats-base-ndarray-dmeanpn' );
 *
 * var x = new Float64Vector( [ 1.0, 3.0, 4.0, 2.0 ] );
 *
 * var v = dmeanpn( [ x ] );
 * // returns 2.5
 */
-
-// MODULES //
-
-var join = require( 'path' ).join;
-var tryRequire = require( '@stdlib/utils-try-require' );
-var isError = require( '@stdlib/assert-is-error' );
-var main = require( './main.js' );
-
-
-// MAIN //
-
-var dmeanpn;
-var tmp = tryRequire( join( __dirname, './native.js' ) );
-if ( isError( tmp ) ) {
-	dmeanpn = main;
-} else {
-	dmeanpn = tmp;
-}
+declare function dmeanpn( arrays: [ float64ndarray ] ): number;
 
 
 // EXPORTS //
 
-module.exports = dmeanpn;
+export = dmeanpn;
